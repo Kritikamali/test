@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:com.training.service.builder:com.training.service.builder-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../com.training.service.builder-api/src/main/java"
+}
+
+group = "com.training.service.builder"

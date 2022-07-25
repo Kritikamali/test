@@ -1,0 +1,4 @@
+Bundle-Name: com.training.add.custom.fields
+Bundle-SymbolicName: add.custom.fields
+Bundle-Version: 1.0.0
+Export-Package: add.custom.fields.constants

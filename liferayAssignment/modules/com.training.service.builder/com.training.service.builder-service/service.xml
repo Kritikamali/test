@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.training.service.builder">
+	<namespace>Kritika</namespace>
+	<entity local-service="true" name="userext" remote-service="true" uuid="true" table="userext">
+		<!--  PK fields  -->
+		<column name="userextId" primary="true" type="long"/>
+		<!--  Group instance  -->
+		<column name="groupId" type="long"/>
+		<!--  Audit fields  -->
+		<column name="companyId" type="long"/>
+		<column name="userId" type="long"/>
+		<column name="userName" type="String"/>
+		<column name="createDate" type="Date"/>
+		<column name="modifiedDate" type="Date"/>
+		<!--  Other fields  -->
+		<column name="screenName" type="String"/>
+		<column name="email" type="String"/>
+		<column name="officeID" type="long"/>
+		<column name="officeLocation" type="String"/>
+		<column name="officeDesignation" type="String"/>
+		<column name="reportingTo" type="String"/>
+		<!--  Order  -->
+		<order by="asc">
+		<order-column name="createDate"/>
+		</order>
+		<!--  Finder methods  -->
+		<finder return-type="Collection" name="email">
+		<finder-column name="email"/>
+		</finder>
+		<finder name="officeID" return-type="Collection">
+		<finder-column name="officeID"/>
+		</finder>
+		<!--  References  -->
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset"/>
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset"/>
+	</entity>
+</service-builder>

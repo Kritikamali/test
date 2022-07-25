@@ -1,0 +1,6 @@
+Bundle-Name: com.trainig.login.fragment
+Bundle-SymbolicName: com.trainig.login.fragment
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.login.web;bundle-version="5.0.17"
+Portal-Bundle-Version: 7.3.10
+Import-Package: *;'resolution:'=optional

@@ -1,0 +1,4 @@
+Bundle-Name: com.training.user.singup.web
+Bundle-SymbolicName: com.training.user.singup.web
+Bundle-Version: 1.0.0
+Export-Package: com.training.user.singup.web.constants
